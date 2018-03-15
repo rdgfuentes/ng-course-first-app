@@ -8,6 +8,6 @@
     >
   </v-product-list-item>
 </ul>
-
-<input placeholder="Title" [(ngModel)]="newTitle" />
-<button (click)="addProduct()" >Add Product</button>
+<v-product-list-form
+  (submitForm)="addProduct($event)"
+></v-product-list-form>

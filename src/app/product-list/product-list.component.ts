@@ -31,8 +31,8 @@ export class ProductListComponent implements OnInit {
     this._isTitleVisible =  visible;
   }
 
-  addProduct() {
-    this.products.push({title: this.newTitle});
+  addProduct(newProduct: IProduct) {
+    this.products.push(newProduct);
     this.newTitle = '';
   }
 
