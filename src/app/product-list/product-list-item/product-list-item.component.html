@@ -2,6 +2,8 @@
   (click)="onClick($event)"
   (mouseenter)="toggleHoverProduct()"
   (mouseleave)="toggleHoverProduct()"
+  [ngClass]="getProductClass()"
+  [ngStyle]="{'font-size.pt': product.title.length * 4}"
   >
-  #{{index}} {{product.title}} {{odd ? "im" : ""}}par --- {{product["isHover"] ? "(Hover)" : ""}}
+  #{{index}} {{product.title}} {{odd ? "im" : ""}}par
 </li>

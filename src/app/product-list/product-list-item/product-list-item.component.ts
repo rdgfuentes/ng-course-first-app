@@ -29,4 +29,10 @@ export class ProductListItemComponent {
   onClick(event: MouseEvent) {
     this.click.emit(event);
   }
+
+  getProductClass() {
+    return {
+      'hover-item': this.product['isHover']
+    };
+  }
 }
