@@ -5,5 +5,5 @@
   [ngClass]="getProductClass()"
   [ngStyle]="{'font-size.pt': product.title.length * 4}"
   >
-  #{{index}} {{product.title}} {{odd ? "im" : ""}}par
+  {{ product | productToString }}  {{product['isHover'] ? '(Hover)' : ''}}
 </li>

@@ -8,6 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductListItemComponent } from './product-list/product-list-item/product-list-item.component';
 import { ProductListFormComponent } from './product-list/product-list-form/product-list-form.component';
 import { AwesomeButtonDirective } from './directive/awesome-button.directive';
+import { ProductToStringPipe } from './pipe/product-to-string.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AwesomeButtonDirective } from './directive/awesome-button.directive';
     ProductListComponent,
     ProductListItemComponent,
     ProductListFormComponent,
-    AwesomeButtonDirective
+    AwesomeButtonDirective,
+    ProductToStringPipe
   ],
   imports: [
     BrowserModule,
