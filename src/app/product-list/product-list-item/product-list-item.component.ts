@@ -22,8 +22,8 @@ export class ProductListItemComponent {
 
   constructor() { }
 
-  isHoverProduct(product: IProduct, status: boolean) {
-    product['isHover'] = status;
+  toggleHoverProduct() {
+    this.product['isHover'] = !this.product['isHover'];
   }
 
   onClick(event: MouseEvent) {

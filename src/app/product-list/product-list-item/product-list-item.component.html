@@ -1,7 +1,7 @@
 <li
   (click)="onClick($event)"
-  (mouseenter)="isHoverProduct(product, true)"
-  (mouseleave)="isHoverProduct(product, false)"
+  (mouseenter)="toggleHoverProduct()"
+  (mouseleave)="toggleHoverProduct()"
   >
   #{{index}} {{product.title}} {{odd ? "im" : ""}}par --- {{product["isHover"] ? "(Hover)" : ""}}
 </li>
