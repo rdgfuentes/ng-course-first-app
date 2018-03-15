@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductListItemComponent } from './product-list/product-list-item/product-list-item.component';
 import { ProductListFormComponent } from './product-list/product-list-form/product-list-form.component';
+import { AwesomeButtonDirective } from './directive/awesome-button.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductListItemComponent,
-    ProductListFormComponent
+    ProductListFormComponent,
+    AwesomeButtonDirective
   ],
   imports: [
     BrowserModule,
