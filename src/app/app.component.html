@@ -1,0 +1,9 @@
+<h1 *ngIf="isTitleVisible">{{title}}</h1>
+<button (click)="showAlert()" >Show Alert</button>
+<button (click)="modifyTitle('my new title')" >Modify Title</button>
+<button (click)="toggleTitle()" >{{!isTitleVisible?"Show":"Hide"}} Title</button>
+
+<div>
+  <v-product-list></v-product-list>
+</div>
+

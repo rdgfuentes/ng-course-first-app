@@ -1,0 +1,13 @@
+<ul>
+  <v-product-list-item 
+    *ngFor="let product of products; let $index = index; let odd = odd" 
+    [product]="product"
+    [index]="$index"
+    [odd]="odd"
+    (click)="removeProduct($index)"
+    >
+  </v-product-list-item>
+</ul>
+
+<input placeholder="Title" [(ngModel)]="newTitle" />
+<button (click)="addProduct()" >Add Product</button>
